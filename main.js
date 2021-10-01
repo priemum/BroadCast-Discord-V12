@@ -21,6 +21,21 @@ let owners = config.owners;
 
 let timeS = config.Time
 
+let vip = config.Vip
+
+// Spefic Server
+
+client.on('guildCreate',async (guild) =>{
+  if (vip.includes (guild.id)) return;
+  else guild.leave();
+})
+
+client.on(`ready`, () => {
+client.guilds.cache.forEach(guild => {
+if (vip.includes (guild.id)) return;
+else guild.leave();
+});
+});
 
 // Timeout Function
 
