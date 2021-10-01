@@ -34,8 +34,8 @@ npm i discord.js
 
 "Prefix": "-",
 "Time": 5000,
-"owners": ["ID1","ID2"]
-
+"owners": ["ID1","ID2"],
+"Vip": ["ID GUILD 1","ID GUILD 2"]
 }
 ```
 
