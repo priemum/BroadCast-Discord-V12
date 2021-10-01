@@ -32,7 +32,7 @@ npm i discord.js
 {
 
 
-"Prefix": "-",
+"Prefix": "!",
 "Time": 5000,
 "owners": ["ID1","ID2"],
 "Vip": ["ID GUILD 1","ID GUILD 2"]
@@ -46,7 +46,5 @@ node main.js
 
 
 ## Command:
-- -bc
-
-![-bc](https://cdn.discordapp.com/attachments/645576197987631116/843295882089725972/Screenshot_1.png)
+- !bc
 
