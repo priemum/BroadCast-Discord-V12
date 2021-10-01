@@ -2,7 +2,7 @@
     "name": "broadcast-discord-v12",
     "version": "12.0.0",
     "description": "Discord Broadcast Bot",
-    "main": "index.js",
+    "main": "main.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "node ."
