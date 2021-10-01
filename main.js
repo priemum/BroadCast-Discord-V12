@@ -1,7 +1,15 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const config = require('./config.json')
+const express = require('express');
+const app = express();
 
+// Keep Alive
+
+app.listen(() => console.log('Broadcast'));
+app.use('/ping', (req, res) => {
+    res.send(new Date());
+});
 
 // Console
 
@@ -10,6 +18,16 @@ client.on("ready", () => {
     console.log(`Logged in as: ${client.user.tag}`);
     console.log(`-> Servers / Members: ${client.guilds.cache.size} server / ${client.users.cache.size} member`);
 
+});
+
+// Staus Bot
+
+client.on('ready', async () => {
+    client.user.setStatus('');
+    client.user.setActivity(
+        `X4U Broadcast`,
+        { type: 'PLAYING' }
+    ); 
 });
 
 // Config 
